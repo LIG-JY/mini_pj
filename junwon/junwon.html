@@ -6,19 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/junwon.css">
+    <script src="js/junwon.js"></script>
 </head>
 <body>
     <header>
         <ul class="head_left">
             <li>
                 <a href="#">
-                    <img src="../common/image/aws-logo.png" alt="amws_logo">
+                    <img src="../common/image/aws-logo.png" alt="aws_logo">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <div class="service">
-                        <span class="material-symbols-outlined">grid_on</span> 
+                    <div class="service" id="event1">
+                        <span class="material-symbols-outlined" id="grid">grid_on</span> 
                         <span id="service_text">서비스</span>
                     </div>
                 </a>
@@ -35,22 +36,31 @@
         </ul>
         <ul class="head_right">
             <li>
-                <span class="material-symbols-outlined" id="terminal">terminal</span>
+                <a href="#" id="event2_right"><span class="material-symbols-outlined" id="search_icon_right">search</span></a>
             </li>
             <li>
-                <span class="material-symbols-outlined" id="noti">notifications</span>
+                <a href="#" id="event2"><span class="material-symbols-outlined" id="terminal">terminal</span></a>
             </li>
             <li>
-                <span class="material-symbols-outlined" id="help">help</span>
+                <a href="#" id="event3"><span class="material-symbols-outlined" id="noti">notifications</span></a>
             </li>
             <li>
-                <select name="region" id="region">
+                <a href="#" id="event4"><span class="material-symbols-outlined" id="help">help</span></a>
+            </li>
+            <li>
+                <select name="region" id="more" >
+                    <option value="서울" selected>더보기</option>
+                    <option value="서울">서울</option>
+                </select>
+            </li>
+            <li>
+                <select name="region" id="event5" >
                     <option value="서울" selected>서울</option>
                     <option value="서울">서울</option>
                 </select>
             </li>
             <li>
-                <select name="account" id="account">
+                <select name="account" id="event6" >
                     <option value="junwon" selected>junwon_seo @ junwonseo</option>
                     <option value="서울">서울</option>
                 </select>
@@ -64,27 +74,6 @@
         <article>
             <section>
 
-                <span class="material-symbols-outlined">
-                    grid_on
-                </span>
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-                <span class="material-symbols-outlined">
-                    notifications
-                </span>
-                <span class="material-symbols-outlined">
-                    help
-                </span>
-                <span class="material-symbols-outlined">
-                    toggle_on
-                </span>
-                <span class="material-symbols-outlined">
-                    toggle_off
-                </span>
-                <span class="material-symbols-outlined">
-                    terminal
-                </span>
             </section>
             <section class="card">
 

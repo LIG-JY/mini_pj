@@ -300,6 +300,34 @@
         font-size: 12px;
         vertical-align: middle;
     }
+
+    /************/
+    /* +++++++++++++++++side bar plus++++++++++++ */
+    #navigation a{
+        text-decoration: none;
+    }
+    .menu_main{
+        line-height: 35px;
+    }
+    .toggle_li li a{
+        color: rgb(100, 99, 99);
+    }
+    a.nav_title{
+        color: black;
+        font-weight: bold;
+    }
+    ul.menu_main {
+        list-style:disclosure-closed;
+        color: rgb(43, 43, 43);
+    }
+    ul.menu_main li::marker {
+        color: rgb(43, 43, 43);    
+    }
+    ul.inner{
+        list-style-type: none;
+        padding-left: 0;
+    }
+
 }
     
 @media screen and (min-width:768px){

@@ -1,4 +1,9 @@
 @media screen and (min-width:320px){
+    body {
+        background-color: #f2f3f3;
+        margin: 0 auto;
+    }
+
     #wrap {
         width: 100%;
         height: 100%;
@@ -10,7 +15,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: lightgray;
         border-collapse: collapse;
     }
 
@@ -252,6 +256,13 @@
         width: 100%;
         line-height: 25px;
         border-top: 1px solid #545b64;
+    }
+
+    footer button {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        margin-left: 5%;
     }
     
     #footer-content {

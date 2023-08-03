@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/total.css">
+    <link rel="stylesheet" href="css/main_section.css">
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/sidebar.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <ul class="head_left">
+                <li>
+                    <a href="#">
+                        <img src="../common/image/aws-logo.png" alt="aws_logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="service" id="event1">
+                            <span class="material-symbols-outlined" id="grid">grid_on</span> 
+                            <span id="service_text">서비스</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="search_section">
+                        <input type="text" name="search" id="search" placeholder="검색">
+                        <span class="material-symbols-outlined" id="search_icon">
+                            search
+                        </span>
+                        <span id="search_hint"> [알트+S]</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="head_right">
+                <li>
+                    <a href="#" id="event2_right"><span class="material-symbols-outlined" id="search_icon_right">search</span></a>
+                </li>
+                <li>
+                    <a href="#" id="event2"><span class="material-symbols-outlined" id="terminal">terminal</span></a>
+                </li>
+                <li>
+                    <a href="#" id="event3"><span class="material-symbols-outlined" id="noti">notifications</span></a>
+                </li>
+                <li>
+                    <a href="#" id="event4"><span class="material-symbols-outlined" id="help">help</span></a>
+                </li>
+                <li>
+                    <select name="region" id="more" >
+                        <option value="서울" selected>더보기</option>
+                        <option value="서울">서울</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="region" id="event5" >
+                        <option value="서울" selected>서울</option>
+                        <option value="서울">서울</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="account" id="event6" >
+                        <option value="junwon" selected>junwon_seo @ junwonseo</option>
+                        <option value="서울">서울</option>
+                    </select>
+                </li>
+            </ul>
+        </header>
+        
+        <div id="main_wrap">
+            <div id="navigation" class="div_nav">
+                <div id="navigation_closed">
+                    <div>
+                        <span class="span_open">
+                            <img src="../common/image/menu.png" alt="menu" id="nav_open_btn">
+                        </span>
+                    </div>
+                </div>
+                <div id="navigation_opened">
+                    <div id="nav_title">
+                        <div class="div_title">
+                            New EC2 experience<br>
+                            <small><a href="#" class="current">Tell us what you think</a></small>
+                        </div>
+                        <div class="div_close">
+                            <img src="../common/image/cancel.png" alt="cancel" id="nav_close_btn">
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu_main">
+                            <li><a href="#" class="current nav_title">EC2 대시보드</a></li>
+                            <li><a href="#" class="nav_title">EC2 글로벌 보기</a></li>
+                            <li><a href="#" class="nav_title">이벤트</a></li>
+                            <li class="toggle_li">
+                                <div class="instance">
+                                    <div>
+                                        <div id="instance_toggle" class="toggle">
+                                            <a href="#" class="nav_title">인스턴스</a>
+                                        </div>
+                                    </div>
+                                    <div id="instance_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">인스턴스</a></li>
+                                            <li><a href="#">인스턴스 유형</a></li>
+                                            <li><a href="#">시작 템플릿</a></li>
+                                            <li><a href="#">스팟 요청</a></li>
+                                            <li><a href="#">Saving Plans</a></li>
+                                            <li><a href="#">예약 인스턴스</a></li>
+                                            <li><a href="#">전용 호스트</a></li>
+                                            <li><a href="#">용량 예약</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="image">
+                                    <div>
+                                        <div id="image_toggle" class="toggle">
+                                            <a href="#" class="nav_title">이미지</a>
+                                        </div>
+                                    </div>
+                                    <div id="image_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">AMI</a></li>
+                                            <li><a href="#">AMI 카탈로그</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="ebs">
+                                    <div>
+                                        <div id="ebs_toggle" class="toggle">
+                                            <a href="#" class="nav_title">Elastic Block Store</a>
+                                        </div>
+                                    </div>
+                                    <div id="ebs_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">볼륨</a></li>
+                                            <li><a href="#">스냅샷</a></li>
+                                            <li><a href="#">수명 주기 관리자</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="net_sec">
+                                    <div>
+                                        <div id="net_sec_toggle" class="toggle">
+                                            <a href="#" class="nav_title">네트워크 및 보안</a>
+                                        </div>
+                                    </div>
+                                    <div id="net_sec_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">보안 그룹</a></li>
+                                            <li><a href="#">탄력적IP</a></li>
+                                            <li><a href="#">배치 그룹</a></li>
+                                            <li><a href="#">키 페어</a></li>
+                                            <li><a href="#">네트워크 인터페이스</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="lb">
+                                    <div>
+                                        <div id="lb_toggle" class="toggle">
+                                            <a href="#" class="nav_title">로드 밸런싱</a>
+                                        </div>
+                                    </div>
+                                    <div id="lb_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">로드밸런서</a></li>
+                                            <li><a href="#">대상 그룹</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="autoscaling">
+                                    <div>
+                                        <div id="autoscaling_toggle" class="toggle">
+                                            <a href="#" class="nav_title">Auto Scaling</a>
+                                        </div>
+                                    </div>
+                                    <div id="autoscaling_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">Auto Scaling 그룹</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>      
+            </div>        
+            <div class="main">
+                <p class="page_head">
+                    <a href="#" class="page_head_content">EC2</a>
+                    <span class="material-symbols-outlined">
+                        navigate_next
+                    </span>
+                    <a href="#" class="page_head_content">인스턴스</a>
+                    <span class="material-symbols-outlined">
+                        navigate_next
+                    </span>
+                    <span class="page_head_content">i-0b2fd43fdd3d0d95a</span>
+                </p>
+                <section class="whole_section">
+                    <article>
+                        <section class="section_top">
+                            <div class="summary_top_left">
+                                <p>
+                                    <span id="instance_summary">i-0b2fd43fdd3d0d95a (test)에 대한 인스턴스 요약</span>
+                                    <a href="#" id="ec2_info">정보</a>
+                                </p>
+                                <span>less than a minute 전에 업데이트됨</span>
+                            </div>
+                            <div class="summary_top_right">
+                                <ul>
+                                    <li>
+                                        <a href="#" id="refresh">
+                                            <span class="material-symbols-outlined">
+                                                refresh
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" ><span id="connect">연결</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="status">
+                                            인스턴스 상태
+                                            <span class="material-symbols-outlined arrow">arrow_drop_down</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="work">
+                                            작업
+                                            <span class="material-symbols-outlined arrow">arrow_drop_down</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="main_card">
+                            <section class="card">
+                                <div class="card_wrap">
+                                    <div>
+                                        <p>
+                                            인스턴스 ID
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            <span>i-0b2fd43fdd3d0d95a (test)</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IPv6 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            호스트 이름 유형
+                                        </p>
+                                        <p>
+                                            IP 이름: ip-172-31-0-77.ap-northeast-2.compute.internal
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            프라이빗 리소스 DNS 이름 응답
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            자동 할당된 IP 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IAM 역할
+                                        </p>
+                                        <p>
+                                            –
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IMDSv2
+                                        </p>
+                                        <p>
+                                            Required
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="card">
+                                <div class="card_wrap">
+
+                                    <div>
+                                        <p>
+                                            퍼블릭 IPv4 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            인스턴스 상태
+                                        </p>
+                                        <p>
+                                            <span class="material-symbols-outlined">do_not_disturb_on</span> 중지됨
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            프라이빗 IP DNS 이름(IPv4만 해당)
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                             ip-172-31-0-77.ap-northeast-2.compute.internal
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            인스턴스 유형
+                                        </p>
+                                        <p>
+                                            t2.micro
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            VPC ID
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            <a href="#">vpc-06092cb2822039d40</a>
+                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            서브넷 ID
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            <a href="#">subnet-0aa7bbca17c4e1670</a>
+                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IMDSv2
+                                        </p>
+                                        <p>
+                                            Required
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="card">
+                                <div class="card_wrap">
+                                    <div>
+                                        <p>
+                                            프라이빗 IPv4 주소
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined copy">content_copy</span></a>
+                                            172.31.0.77
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            퍼블릭 IPv4 DNS
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            탄력적 IP 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            AWS Compute Optimizer 찾기
+                                        </p>
+                                        <p>
+                                            <span class="material-symbols-outlined opt_in optin_move">info</span>
+                                            <span class="opt_in">AWS Compute Optimizer에 옵트인</span>                                  
+                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Auto Scaling 그룹 이름
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </section>
+
+                        </div>
+                    </article>
+                    <article>
+                        <section class="card2_top">
+                            <ul>
+                                <li>
+                                    <a href="#">세부 정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">보안</a>
+                                </li>
+                                <li>
+                                    <a href="#">네트워킹</a>
+                                </li>
+                                <li>
+                                    <a href="#">스토리지</a>
+                                </li>
+                                <li>
+                                    <a href="#">상태 검사</a>
+                                </li>
+                                <li>
+                                    <a href="#">모니터링</a>
+                                </li>
+                                <li>
+                                    <a href="#">태그</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <div class="main_card">
+
+                            <section class="card">
+                                <div class="card_wrap">
+                                    <div>
+                                        <p>
+                                            인스턴스 ID
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            <span>i-0b2fd43fdd3d0d95a (test)</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IPv6 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            호스트 이름 유형
+                                        </p>
+                                        <p>
+                                            IP 이름: ip-172-31-0-77.ap-northeast-2.compute.internal
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            프라이빗 리소스 DNS 이름 응답
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            자동 할당된 IP 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IAM 역할
+                                        </p>
+                                        <p>
+                                            –
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IMDSv2
+                                        </p>
+                                        <p>
+                                            Required
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="card">
+                                <div class="card_wrap">
+    
+                                    <div>
+                                        <p>
+                                            퍼블릭 IPv4 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            인스턴스 상태
+                                        </p>
+                                        <p>
+                                            <span class="material-symbols-outlined">do_not_disturb_on</span> 중지됨
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            프라이빗 IP DNS 이름(IPv4만 해당)
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                             ip-172-31-0-77.ap-northeast-2.compute.internal
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            인스턴스 유형
+                                        </p>
+                                        <p>
+                                            t2.micro
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            VPC ID
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            <a href="#">vpc-06092cb2822039d40</a>
+                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            서브넷 ID
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            <a href="#">subnet-0aa7bbca17c4e1670</a>
+                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            IMDSv2
+                                        </p>
+                                        <p>
+                                            Required
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="card">
+                                <div class="card_wrap">
+                                    <div>
+                                        <p>
+                                            프라이빗 IPv4 주소
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined copy">content_copy</span></a>
+                                            172.31.0.77
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            퍼블릭 IPv4 DNS
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            탄력적 IP 주소
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            AWS Compute Optimizer 찾기
+                                        </p>
+                                        <p>
+                                            <span class="material-symbols-outlined opt_in optin_move">info</span>
+                                            <span class="opt_in">AWS Compute Optimizer에 옵트인</span>                                  
+                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Auto Scaling 그룹 이름
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </section>
+                        </div>
+                    </article>
+                </section>
+
+
+            </div>
+        </div>
+        <footer id="footer-content">
+            <div class="inner_contents01">
+                <!--cloudshell icon-->
+                <div id="cloudShell">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="2.0" aria-hidden="true" class="globalNav-0311"
+                            width="16" height="16" viewBox="0 0 16 16">
+                            <path
+                                d="M5 5l2.997 2.998L5 11m4.997-.002H12m3-7.626A2.374 2.374 0 0012.627 1H3.37A2.372 2.372 0 001 3.372v9.256a2.373 2.373 0 002.37 2.373h9.257A2.375 2.375 0 0015 12.628V3.372z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none">
+                            </path>
+                        </svg>
+                    </button>
+                    <button>CloudShell</button>
+                </div>
+    
+                <div id="opinionAndLanguage">
+                    <button> 의견</button>
+    
+                    <button>언어</button>
+                </div>
+    
+            </div>
+    
+            <div class="inner_contents02">
+                <button>© 2023, Amazon Web Services, Inc. 또는 계열사.</button>
+                <button>개인 정보 보호</button>
+                <button>약관</button>
+                <button>쿠키 기본 설정</button>
+            </div>
+    
+        </footer>
+    </div>
+</body>
+</html>

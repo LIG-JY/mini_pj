@@ -64,6 +64,208 @@
         width: 10%;
     }
 
+    .main_contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .support_tool {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .billing_information,
+    .service_quotas,
+    .trusted_advisor,
+    .health_dashboard,
+    .compute_optimizer {
+        flex-basis: calc(50% - 10px); /* 가로에 2개를 배치하므로 50%, 각 아이템 사이의 간격을 위해 -10px을 함 */
+        margin-bottom: 20px; /* 세로 간격을 위한 마진 */
+        padding-bottom: 1%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .support_tool_sub {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .specification {
+        border: 1px solid rgba(0, 0, 0);
+        width: 20%;
+        text-align: center;
+    }
+
+    .alert_sub_container {
+        margin-bottom: 3%;
+    }
+
+    .alert_row {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        align-items: center;
+        height: 50px;
+    }
+
+    .alert_row > * {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .alert_row:nth-child(2n+1) {
+        background-color: rgba(211, 211, 211, 0.3);
+    }
+
+    .alert_row:nth-child(2n+1) > a {
+        text-decoration: none;
+        color: #0073bb;
+    }
+
+    #edge_case {
+        text-decoration: none;
+        color: #0073bb;
+    }
+
+    .support_example_tab {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .support_example_tab > div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        padding: 1%;
+    }
+
+    #edge_case2 {
+        color: #0073bb;
+    }
+
+    .support_example_row_01 {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .support_example_row_01 > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .support_example_right > div > a {
+        text-decoration: none;
+    }
+
+    .support_example_right > div {
+        padding: 10px 25px;
+    }
+
+    .support_example_right > div:not(:last-child) {
+        margin-right: 10px
+    }
+
+    .support_example_right > div:last-child {
+        font-weight: bold;
+        background-color: #FF9900;
+    }
+
+    .support_example_right > div:last-child > a {
+        color: black;
+    }
+
+    .support_example_row_03, .support_example_row_04 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 세로 중앙 정렬 */
+    }
+
+    .search_tab {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        align-items: center;
+        box-shadow: 0 8px 6px -9px black;
+    }
+
+    .search_help {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #helper {
+        text-align: center;
+    }
+
+    .search_tab > div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+    }
+
+    #news,
+    #search_text_input {
+        text-align: center;
+    }
+
+    #news {
+        color: #0073bb;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .sub_box_right {
+        margin-left: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .FAQ_space,
+    .account_space,
+    .bill_space {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .FAQ_space,
+    .account_space,
+    .bill_space,
+    .freeTier {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .account_space *,
+    .bill_space *,
+    .freeTier * {
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #0073bb;
+        text-decoration: none;
+    }
+
+    .account_space h3,
+    .bill_space h3,
+    .freeTier h3 {
+        font-size: 18px;
+        font-weight: normal;
+        color: black;
+    }
+
     /*----------------- Header -----------------*/
     .material-symbols-outlined {
         font-variation-settings: 'FILL' 1,

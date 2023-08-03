@@ -1,0 +1,118 @@
+@media screen and (min-width:320px){
+    .main_contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resource_child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .child_left, .child_right {
+        width: 50%;
+    }
+
+    .main_contents section, aside section {
+        margin: 10px 10px 10px 10px;
+        background-color: white;
+        border: 1px solid rgb(154, 150, 150);
+    }
+
+    .content_top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main_contents section img {
+        width: 40px;
+        height: 30px;
+    }
+
+    section.resource_status ul {
+        list-style: none;
+    }
+
+    ul.instance_list {    
+        margin: auto;
+        padding: 10px 0px 10px 50px;
+    }
+
+    ul.instance_list li{
+        border: 1px solid blue;
+        width: 90%;
+    }
+
+    div.content_description {
+        padding-left: 20px;
+    }
+
+    div.content_title, div.content_top {
+        padding-left: 20px;
+        border-bottom: 1px solid silver;
+    }
+
+    section.resource_status li span {
+        width:50%;
+    }
+
+    section.resource_status li span {
+        width:50%;
+    }
+
+    table {
+        margin: auto;
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    div.caption {
+        padding-left: 20px;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    table th {
+        text-align: left;
+        border-top: 1px solid silver;
+        border-bottom: 1px solid silver;
+    }
+
+    table tr{
+        border-bottom: 1px solid silver;
+    }
+}
+
+@media screen and (min-width:768px){
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul.instance_list { 
+        padding: 10px 0px 10px 35px;
+    }
+
+    ul.instance_list li{
+        display: inline-block;
+        width:46%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    div.main {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    ul.instance_list { 
+        padding: 0px 0px 0px 50px;
+    }
+
+    ul.instance_list li{
+        width:30%;
+    }
+}

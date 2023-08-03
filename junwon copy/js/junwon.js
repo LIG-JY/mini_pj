@@ -17,7 +17,6 @@ window.onload=function(){
     event1.addEventListener('mouseover', function(){
         grid.style.color = 'orange';
         service_txt.style.color = 'orange';
-        alert("asdsada");
     });
 
     event1.addEventListener('mouseout', function(){

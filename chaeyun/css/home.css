@@ -1,8 +1,4 @@
 @media screen and (min-width: 320px) {
-    body {
-        background-color: #f2f3f3;
-    }
-
     a {
         color: #1573bb;
         text-decoration: none;
@@ -20,7 +16,7 @@
         margin-right: 20px;
     }
 
-    .wrap {
+    .main_wrap {
         width: 50%;
         margin: 0 auto;
     }
@@ -141,7 +137,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .wrap {
+    .main_wrap {
         width: 90%;
     }
 
@@ -166,7 +162,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .wrap {
-        width: 80%;
+    .main_wrap {
+        width: 88%;
     }
 }

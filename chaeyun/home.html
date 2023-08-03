@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/total.css">
     <link rel="stylesheet" href="css/home.css">
     <script src="js/common.js"></script>
@@ -12,7 +14,7 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div id="wrap">
         <!-- header -->
         <header>
             <ul class="head_left">
@@ -75,126 +77,128 @@
         </header>
 
         <!-- main -->
-        <div class="main_1">
-            <h1>콘솔 홈</h1>
-            <div class="btns">
-                <button class="btn_reset">기본 레이아웃으로 재설정</button>
-                <button class="btn_add">+ 위젯 추가</button>
+        <div class="main_wrap">
+            <div class="main_1">
+                <h1>콘솔 홈</h1>
+                <div class="btns">
+                    <button class="btn_reset">기본 레이아웃으로 재설정</button>
+                    <button class="btn_add">+ 위젯 추가</button>
+                </div>
             </div>
-        </div>
 
-        <div class="main_2">
-            <!-- 최근에 방문한 서비스 -->
-            <section class="section_1">
-                <div class="section_header">
-                    <img src="image/hold.png" alt="hold" class="img_hold">
-                    <h3>최근에 방문한 서비스</h3>
-                    <img src="image/extra.png" alt="extra" class="img_extra">
-                </div>
-                <div class="section_content">
-                    <div class="rows">
+            <div class="main_2">
+                <!-- 최근에 방문한 서비스 -->
+                <section class="section_1">
+                    <div class="section_header">
+                        <img src="image/hold.png" alt="hold" class="img_hold">
+                        <h3>최근에 방문한 서비스</h3>
+                        <img src="image/extra.png" alt="extra" class="img_extra">
+                    </div>
+                    <div class="section_content">
+                        <div class="rows">
+                            <div class="row">
+                                <img alt="EC2"
+                                    src="https://d2tag017dbhslw.cloudfront.net/icon/d88319dfa5d204f019b4284149886c59-7d586ea82f792b61a8c87de60565133d.svg">
+                                <div class="info">
+                                    <a href="ec2.html">EC2</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <img alt="Support"
+                                    src="https://d2tag017dbhslw.cloudfront.net/icon/434990c8a25d2be94863561ae98bd682-56e2a04c8228085bcd5d2a39a35cf0d9.svg">
+                                <div class="info">
+                                    <a href="support.html">Support</a>
+                                </div>
+                            </div>
+                            <div class="empty_row"></div>
+                            <div class="empty_row"></div>
+                            <div class="empty_row"></div>
+                            <div class="empty_row"></div>
+                            <div class="empty_row"></div>
+                        </div>
+                        <div class="rows"></div>
+                    </div>
+
+                    <div class="section_footer">
+                        <p><a href="#">모든 서비스 보기</a></p>
+                    </div>
+                </section>
+
+                <!-- AWS 시작 -->
+                <section class="section_2">
+                    <div class="section_header">
+                        <img src="image/hold.png" alt="hold" class="img_hold">
+                        <h3>AWS 시작</h3>
+                        <img src="image/extra.png" alt="extra" class="img_extra">
+                    </div>
+                    <div class="section_content">
                         <div class="row">
-                            <img alt="EC2"
-                                src="https://d2tag017dbhslw.cloudfront.net/icon/d88319dfa5d204f019b4284149886c59-7d586ea82f792b61a8c87de60565133d.svg">
+                            <img src="image/rocket.png" alt="rocket">
                             <div class="info">
-                                <a href="ec2.html">EC2</a>
+                                <a href="#">AWS 시작하기</a>
+                                <p>AWS를 최대한 활용하는 데 도움이 되는 기초 지식을 배우고 유용한 정보를 찾아봅니다.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <img alt="Support"
-                                src="https://d2tag017dbhslw.cloudfront.net/icon/434990c8a25d2be94863561ae98bd682-56e2a04c8228085bcd5d2a39a35cf0d9.svg">
+                            <img src="image/cert.png" alt="cert">
                             <div class="info">
-                                <a href="support.html">Support</a>
-                            </div>
-                        </div>
-                        <div class="empty_row"></div>
-                        <div class="empty_row"></div>
-                        <div class="empty_row"></div>
-                        <div class="empty_row"></div>
-                        <div class="empty_row"></div>
-                    </div>
-                    <div class="rows"></div>
-                </div>
-
-                <div class="section_footer">
-                    <p><a href="#">모든 서비스 보기</a></p>
-                </div>
-            </section>
-
-            <!-- AWS 시작 -->
-            <section class="section_2">
-                <div class="section_header">
-                    <img src="image/hold.png" alt="hold" class="img_hold">
-                    <h3>AWS 시작</h3>
-                    <img src="image/extra.png" alt="extra" class="img_extra">
-                </div>
-                <div class="section_content">
-                    <div class="row">
-                        <img src="image/rocket.png" alt="rocket">
-                        <div class="info">
-                            <a href="#">AWS 시작하기</a>
-                            <p>AWS를 최대한 활용하는 데 도움이 되는 기초 지식을 배우고 유용한 정보를 찾아봅니다.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="image/cert.png" alt="cert">
-                        <div class="info">
-                            <a href="#">교육 및 자격증</a>
-                            <p>AWS 전문가로부터 배우고 기술과 지식을 발전시킵니다.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="image/light.png" alt="light">
-                        <div class="info">
-                            <a href="#">AWS의 새로운 소식</a>
-                            <p>새로운 AWS 서비스, 기능 및 리전을 검색합니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- AWS Health -->
-            <section class="section_3">
-                <div class="section_header">
-                    <img src="image/hold.png" alt="hold" class="img_hold">
-                    <h3>AWS Health</h3>
-                    <img src="image/extra.png" alt="extra" class="img_extra">
-                </div>
-                <div class="section_content">
-                    <div class="rows">
-                        <div class="row">
-                            <div class="title">열린 문제</div>
-                            <div class="info">
-                                <div class="num">0</div>
-                                <div>지난 7일</div>
+                                <a href="#">교육 및 자격증</a>
+                                <p>AWS 전문가로부터 배우고 기술과 지식을 발전시킵니다.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="title">예정된 변경 사항</div>
+                            <img src="image/light.png" alt="light">
                             <div class="info">
-                                <div class="num">0</div>
-                                <div>향후 7일 및 지난 7일</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="title">기타 알림</div>
-                            <div class="info">
-                                <div class="num">0</div>
-                                <div>지난 7일</div>
+                                <a href="#">AWS의 새로운 소식</a>
+                                <p>새로운 AWS 서비스, 기능 및 리전을 검색합니다.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section_footer">
-                    <p><a href="#">AWS Health로 이동</a></p>
-                </div>
-            </section>
-        </div>
+                </section>
 
-        <hr>
-        <div class="main_3">
-            <p><a href="#">다른 위젯을 보고 싶다면 알려주세요!</a> </p>
-            <button>+ 위젯 추가</button>
+                <!-- AWS Health -->
+                <section class="section_3">
+                    <div class="section_header">
+                        <img src="image/hold.png" alt="hold" class="img_hold">
+                        <h3>AWS Health</h3>
+                        <img src="image/extra.png" alt="extra" class="img_extra">
+                    </div>
+                    <div class="section_content">
+                        <div class="rows">
+                            <div class="row">
+                                <div class="title">열린 문제</div>
+                                <div class="info">
+                                    <div class="num">0</div>
+                                    <div>지난 7일</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="title">예정된 변경 사항</div>
+                                <div class="info">
+                                    <div class="num">0</div>
+                                    <div>향후 7일 및 지난 7일</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="title">기타 알림</div>
+                                <div class="info">
+                                    <div class="num">0</div>
+                                    <div>지난 7일</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_footer">
+                        <p><a href="#">AWS Health로 이동</a></p>
+                    </div>
+                </section>
+            </div>
+
+            <hr>
+            <div class="main_3">
+                <p><a href="#">다른 위젯을 보고 싶다면 알려주세요!</a> </p>
+                <button>+ 위젯 추가</button>
+            </div>
         </div>
 
         <!-- footer -->

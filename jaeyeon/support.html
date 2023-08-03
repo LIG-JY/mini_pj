@@ -33,7 +33,6 @@
                     <span class="material-symbols-outlined" id="search_icon">
                             search
                         </span>
-                    <span id="search_hint"> [알트+S]</span>
                 </div>
             </li>
         </ul>
@@ -115,7 +114,7 @@
                 </div>
             </div>
             <div id="navigation_opened">
-                <div id="nav_title">
+                <div class="nav_title">
                     <h3 class="div_title">
                         지원 센터
                     </h3>
@@ -123,13 +122,27 @@
                         <img src="image/cancel.png" alt="cancel" id="nav_close_btn">
                     </div>
                 </div>
+                <div class="nav_title2">
+                    <h6>계정 번호: 000000000000</h6>
+                    <h4>Support 플랜: Basic 변경<br>
+                        Support 플랜 보기</h4>
+                </div>
                 <nav class="menu">
                     <ul class="menu_main">
-                        <li><a href="#" class="no_marker">지원 사례</a></li>
-                        <li><a href="#" class="no_marker">Slack 내 AWS Support 앱</a></li>
-                        <li><a href="#" class="no_marker">Compute Optimizer</a></li>
-                        <li><a href="#" class="no_marker">AWS Health Dashboard</a></li>
-                        <li><a href="#" class="no_marker">Trusted Advisor</a></li>
+
+
+                        <ul class="inner">
+                            <li><a href="#">Slack 내 AWS Support 앱</a></li>
+                        </ul>
+                        <ul class="inner">
+                            <li><a href="#">Compute Optimizer</a></li>
+                        </ul>
+                        <ul class="inner">
+                            <li><a href="#">AWS Health Dashboard</a></li>
+                        </ul>
+                        <ul class="inner" id="edge_case3">
+                            <li><a href="#">Trusted Advisor</a></li>
+                        </ul>
                         <li class="toggle_li">
                             <div class="instance">
                                 <div>

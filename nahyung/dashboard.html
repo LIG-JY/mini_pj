@@ -237,12 +237,12 @@
                         <section class="resource_status">
                             <div class="content_top">
                                 <div class= "content_title">
-                                    <span><h3>리소스</h3></span>
+                                    <h3>리소스</h3>
                                 </div>
                                 <div class="content_btn">
-                                    <span><img src="image/dash_ec2global.png" alt="global view"></span>
-                                    <span><img src="image/dash_setting.png" alt="setting"></span>
-                                    <span><img src="image/dash_reload.png" alt="reload"></span>
+                                    <button class="ec2_global">EC2 글로벌 보기</button>
+                                    <button class="setting">설정</button>
+                                    <button class="reload">Reload</button>
                                 </div>
                             </div>
                             <div class="content_description">
@@ -250,56 +250,59 @@
                             </div>
                             <div class="content">
                                 <ul class="instance_list">
-                                    <li><span><a href="#">인스턴스(실행 중)</a></span><span><a href="#">1</a></span></li>
-                                    <li><span><a href="#">로드 밸런서</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">배치 그룹</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">보안 그룹</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">볼륨</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">스냅샷</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">인스턴스</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">전용 호스트</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">키 페어</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">탄력적 IP</a></span><span><a href="#">0</a></span></li>
-                                    <li><span><a href="#">Auto Scaling Groups</a></span><span><a href="#">0</a></span></li>
+                                    <li><a href="#">인스턴스(실행 중)</a><span class="num"><a href="#">1</a></span></li>
+                                    <li><a href="#">로드 밸런서</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">배치 그룹</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">보안 그룹</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">볼륨</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">스냅샷</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">인스턴스</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">전용 호스트</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">키 페어</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">탄력적 IP</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">Auto Scaling Groups</a><span class="num"><a href="#">0</a></span></li>
                                 </ul>
                             </div>
                         </section>
                     </div>
                     <div class="resource_child">
                         <div class="child_left">
-                            <section class="instance_start"> 
-                                <div class= "content_title">
-                                    <span><h3>인스턴스 시작</h3></span>
+                            <section class="instance_start">
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3>인스턴스 시작</h3>
+                                    </div>
                                 </div>
                                 <div class="content_description">
                                     시작하려면 클라우드의 가상 서버인 Amazon EC2 인스턴스를 시작하십시오.
                                 </div>
-                                <div class="content">
-                                    <button>인스턴스 시작</button>
-                                    <button>서버 마이그래이션</button>
+                                <div class="content_description">
+                                    <div class="content_btn" id="instance_btn_div">
+                                        <button class="start_instance">인스턴스 시작</button>
+                                        <button class="server_migration">서버 마이그래이션</button>
+                                    </div>
                                     <p>참고: 인스턴스는 아시아 태평양 (서울) 리전에서 시작됩니다.</p>
                                 </div>
                             </section>
                             <section class="reserved_events">
                                 <div class="content_top">
                                     <div class= "content_title">
-                                        <span><h3>예약된 이벤트</h3></span>
+                                        <h3>예약된 이벤트</h3>
                                     </div>
                                     <div class="content_btn">
-                                        <span><img src="image/dash_reload.png" alt="reload"></span>
+                                        <button class="reload">Reload</button>
                                     </div>
                                 </div>
                                 <div class="content_description">
-                                    <h6>아시아 태평양 (서울)</h6>
+                                    <h4>아시아 태평양 (서울)</h4>
                                     <p>예약된 이벤트 없음</p>
-                                </div>
-                                <div class="content">
-    
                                 </div>
                             </section>
                             <section class="server_migration">
-                                <div class= "content_title">
-                                    <span><h3>서버 마이그래이션</h3></span>
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3>서버 마이그레이션</h3>
+                                    </div>
                                 </div>
                                 <div class="content_description">
                                     <p>AWS Application Migration Service를 사용하여 물리적, 가상 및 클라우드 인프라에서 
@@ -312,11 +315,13 @@
                                 </div>
                             </section>
                             <section class="id_filter">
-                                <div class= "content_title">
-                                    <span><h3>빠른 ID 필터</h3></span>
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3>빠른 ID 필터</h3>
+                                    </div>
                                 </div>
                                 <div class="content">
-                                    <input type="text">
+                                    <input class= "input_resource" type="text" value="리소스 ID 입력">
                                 </div>
                             </section>
                         </div>
@@ -324,22 +329,32 @@
                             <section class="service_status">
                                 <div class="content_top">
                                     <div class= "content_title">
-                                        <span><h3>서비스 상태</h3></span>
+                                        <h3 class="service_status_h3">서비스 상태</h3>
                                     </div>
                                     <div class="content_btn">
-                                        <span><img src="image/dash_awshealth.png" alt="global view"></span>
-                                        <span><img src="image/dash_reload.png" alt="setting"></span>
+                                        <button class="aws_health">AWS Health 대시보드</button>
+                                        <button class="reload">Reload</button>
                                     </div>
                                 </div>
                                 <div class="content_description">
-                                    시작하려면 클라우드의 가상 서버인 Amazon EC2 인스턴스를 시작하십시오.
+                                    <p class="p_service_region">
+                                        리전<br>
+                                        아시아 태평양(서울)
+                                    </p>
+                                    <p class="p_service_status">
+                                        상태<br>
+                                        <span><img src="image/green_check.png" alt="Check" class="green_check_img"></span>
+                                        <span class="status_message">이 서비스가 정상적으로 작동중입니다.</span>
+                                    </p>
                                 </div>
                                 <div class="content">
                                     <p class="caption">영역</p>
                                     <table>
                                         <thead>
-                                            <th>영역 이름</th>
-                                            <th>영역 ID</th>
+                                            <tr>
+                                                <th>영역 이름</th>
+                                                <th>영역 ID</th>
+                                            </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
@@ -360,6 +375,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <p><a href="#" class="region_az">추가 영역 활성화</a></p>
                                 </div>
                             </section>
                         </div>
@@ -369,30 +385,32 @@
                     <section class="account_property">
                         <div class="content_top">
                             <div class= "content_title">
-                                <span><h3>계정 속성</h3></span>
+                                <h3 class="account_property_h3">계정 속성</h3>
                             </div>
                             <div class="content_btn">
-                                <span><img src="image/dash_reload.png" alt="global view"></span>
+                                <button class="reload">Reload</button>
                             </div>
                         </div>
                         <div class="content">
                             <ul>
-                                <li><a href="#">지원되는 플랫폼 </a></li>
-                                <li>VPC</li>
-                                <li><a href="#">기본 VPC </a></li>
-                                <li>vpc-0a65c7163ee8a684e</li>
-                                <li>설정</li>
-                                <li><a href="#">EBS 암호화</a></li>
-                                <li><a href="#">영역</a></li>
-                                <li><a href="#">EC2 직렬 콘솔</a></li>
-                                <li><a href="#">기본 크레딧 사양</a></li>
-                                <li><a href="#">콘솔 실험</a></li>
+                                <li><a href="#"><strong>지원되는 플랫폼</strong></a></li>
+                                <li class="need_margin">VPC</li>
+                                <li><a href="#"><strong>기본 VPC</strong></a></li>
+                                <li class="need_margin">vpc-0a65c7163ee8a684e</li>
+                                <li><strong>설정</strong></li>
+                                <li><a href="#" class="account_prop">EBS 암호화</a></li>
+                                <li><a href="#" class="account_prop">영역</a></li>
+                                <li><a href="#" class="account_prop">EC2 직렬 콘솔</a></li>
+                                <li><a href="#" class="account_prop">기본 크레딧 사양</a></li>
+                                <li><a href="#" class="account_prop">콘솔 실험</a></li>
                             </ul>
                         </div>
                     </section>
                     <section class="additional_info">
-                        <div class= "content_title">
-                            <span><h3>추가 정보</h3></span>
+                        <div class="content_top">
+                            <div class= "content_title">
+                                <h3>추가 정보</h3>
+                            </div>
                         </div>
                         <div class="content">
                             <ul>

@@ -17,18 +17,17 @@
     .main_contents section, aside section {
         margin: 10px 10px 10px 10px;
         background-color: white;
-        border: 1px solid rgb(154, 150, 150);
+        border: 1px solid silver;
+        box-shadow: 2px 2px 2px silver;
     }
 
     .content_top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .main_contents section img {
-        width: 40px;
-        height: 30px;
+        border-bottom: 1px solid #eaeded;
+        flex-wrap: wrap;
+        background-color: #fafafa;
     }
 
     section.resource_status ul {
@@ -41,25 +40,62 @@
     }
 
     ul.instance_list li{
-        border: 1px solid blue;
+        border: 1px solid silver;
+        border-radius: 2px;
         width: 90%;
+        margin-bottom:5px;
+        padding: 6px 7px 6px 7px;
+    }
+
+    ul.instance_list li a{
+        font-size: 0.8rem;
+        color: #0073BB;
+        text-decoration: none;
+    }
+
+    ul.instance_list li a:hover {
+        text-decoration: underline;
     }
 
     div.content_description {
+        padding-top:7px;
+        padding-left: 20px;
+        padding-right:20px;
+        font-size: 0.9rem;
+    }
+
+    .green_check_img {
+        width: 14px;
+        height: 14px;
+        padding-top: 6px;
+    }
+
+    a.region_az {
+        padding-left: 25px;
+        color: #0073BB;
+        text-decoration: none;
+    }
+
+    .p_service_status {
+        color: #1d8101;
+        font-weight: bold;
+    }
+
+    .status_message {
+        padding-bottom: 2px;
+    }
+
+    div.content_title {
         padding-left: 20px;
     }
 
-    div.content_title, div.content_top {
-        padding-left: 20px;
-        border-bottom: 1px solid silver;
+    section.server_migration a{
+        color: #0073BB;
+        text-decoration: none;
     }
 
-    section.resource_status li span {
-        width:50%;
-    }
-
-    section.resource_status li span {
-        width:50%;
+    section.server_migration a:visited{
+        color: #0073BB;
     }
 
     table {
@@ -67,15 +103,18 @@
         width: 90%;
         border-collapse: collapse;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    div.caption {
+    p.caption {
         padding-left: 20px;
         font-size: larger;
         font-weight: bolder;
+        background-color: #fafafa;
     }
 
     table th {
+        background-color: #fafafa;
         text-align: left;
         border-top: 1px solid silver;
         border-bottom: 1px solid silver;
@@ -84,9 +123,112 @@
     table tr{
         border-bottom: 1px solid silver;
     }
+
+    div.content_btn {
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-bottom: 3px;
+    }
+
+    div.content_btn button {
+        border: 1px solid gray;
+        border-radius: 2px;
+        padding: 7px 20px;
+        font-weight: bolder;
+        margin-top: 5px;
+        color: black;
+    }
+
+    button.start_instance {
+        background-color: orange;
+        border: 1px solid orange;
+    }
+
+    .input_resource {
+        font-style: italic;
+        margin-top: 7px;
+        margin-left: 20px;
+        margin-bottom: 7px;
+        width: 80%;
+        height: 30px;
+        border: 1px solid silver;
+        box-shadow: 2px 2px 2px silver;
+    }
+
+    .main h3 {
+        margin-top: 7px;
+    }
+
+    h3.service_status_h3 {        
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    h3.account_property_h3 {
+        width: 100px;
+        margin-bottom: 0;
+    }
+
+    .account_property ul {
+        list-style: none;
+        position: relative;
+        left:-15px;
+    }
+
+    .account_property ul li a{
+        text-decoration: none;
+    }
+
+    .account_property ul li a:visited{
+        color: #0073BB;
+    }
+
+    .need_margin {
+        margin-left: 3px;
+        margin-bottom: 12px;
+        color: #16191F;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    a.account_prop {
+        margin-left: 3px;
+        margin-top: 4px;
+        font-size: 0.8rem;
+    }
+
+    span.num {
+        float: right;
+    }
+
+    .additional_info ul {        
+        list-style: none;
+        position: relative;
+        left:-10px;
+    }
+
+    .additional_info ul li {        
+        list-style: none;
+        position: relative;
+        left:-15px;
+    }
+
+    .additional_info ul li a {
+        text-decoration: none;
+        margin-left: 3px;
+        margin-top: 4px;
+        font-size: 0.8rem;
+    }
+
+    .additional_info ul li a:visited{
+        color: #0073BB;
+    }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px){    
+    aside {
+        width: 35%;
+    }    
     .main {
         display: flex;
         flex-direction: row;
@@ -103,15 +245,6 @@
 }
 
 @media screen and (min-width:1024px){
-    div.main {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    ul.instance_list { 
-        padding: 0px 0px 0px 50px;
-    }
-
     ul.instance_list li{
         width:30%;
     }

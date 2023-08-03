@@ -334,6 +334,7 @@
 
     #main_wrap {
         width: 100%;
+        height: 92vh;
         display: flex;
         flex-direction: row;
     }
@@ -384,7 +385,8 @@
     
     
 @media screen and (min-width:1024px){
-    
+
+
     /*----------------- Header -----------------*/    
     ul.head_left li:last-child{
         display: inline-block;

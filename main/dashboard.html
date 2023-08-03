@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="js/common.js"></script>
+    <script src="js/sidebar.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <ul class="head_left">
+                <li>
+                    <a href="#">
+                        <img src="image/aws-logo.png" alt="aws_logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="service" id="event1">
+                            <span class="material-symbols-outlined" id="grid">grid_on</span> 
+                            <span id="service_text">서비스</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="search_section">
+                        <input type="text" name="search" id="search" placeholder="검색">
+                        <span class="material-symbols-outlined" id="search_icon">
+                            search
+                        </span>
+                        <span id="search_hint"> [알트+S]</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="head_right">
+                <li>
+                    <a href="#" id="event2_right"><span class="material-symbols-outlined" id="search_icon_right">search</span></a>
+                </li>
+                <li>
+                    <a href="#" id="event2"><span class="material-symbols-outlined" id="terminal">terminal</span></a>
+                </li>
+                <li>
+                    <a href="#" id="event3"><span class="material-symbols-outlined" id="noti">notifications</span></a>
+                </li>
+                <li>
+                    <a href="#" id="event4"><span class="material-symbols-outlined" id="help">help</span></a>
+                </li>
+                <li>
+                    <select name="region" id="more" >
+                        <option value="서울" selected>더보기</option>
+                        <option value="서울">서울</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="region" id="event5" >
+                        <option value="서울" selected>서울</option>
+                        <option value="서울">서울</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="account" id="event6" >
+                        <option value="junwon" selected>junwon_seo @ junwonseo</option>
+                        <option value="서울">서울</option>
+                    </select>
+                </li>
+            </ul>
+        </header>
+        <div id="main_wrap">
+            <div id="navigation">
+                <div id="navigation_closed">
+                    <div>
+                        <span class="span_open">
+                            <img src="image/menu.png" alt="menu" id="nav_open_btn">
+                        </span>
+                    </div>
+                </div>
+                <div id="navigation_opened">
+                    <div id="nav_title">
+                        <div class="div_title">
+                            New EC2 experience<br>
+                            <small><a href="#" class="current">Tell us what you think</a></small>
+                        </div>
+                        <div class="div_close">
+                            <img src="image/cancel.png" alt="cancel" id="nav_close_btn">
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu_main">
+                            <ul class="inner"><li><a href="#" class="current" class="nav_title">EC2 대시보드</a></li></ul>
+                            <ul class="inner"><li><a href="#" class="nav_title">EC2 글로벌 보기</a></li></ul>
+                            <ul class="inner"><li><a href="#" class="nav_title">이벤트</a></li></ul>
+                            <li class="toggle_li">
+                                <div class="instance">
+                                    <div>
+                                        <div id="instance_toggle" class="toggle">
+                                            인스턴스
+                                        </div>
+                                    </div>
+                                    <div id="instance_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">인스턴스</a></li>
+                                            <li><a href="#">인스턴스 유형</a></li>
+                                            <li><a href="#">시작 템플릿</a></li>
+                                            <li><a href="#">스팟 요청</a></li>
+                                            <li><a href="#">Saving Plans</a></li>
+                                            <li><a href="#">예약 인스턴스</a></li>
+                                            <li><a href="#">전용 호스트</a></li>
+                                            <li><a href="#">용량 예약</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="image">
+                                    <div>
+                                        <div id="image_toggle" class="toggle">
+                                            이미지
+                                        </div>
+                                    </div>
+                                    <div id="image_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">AMI</a></li>
+                                            <li><a href="#">AMI 카탈로그</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="ebs">
+                                    <div>
+                                        <div id="ebs_toggle" class="toggle">
+                                            Elastic Block Store
+                                        </div>
+                                    </div>
+                                    <div id="ebs_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">볼륨</a></li>
+                                            <li><a href="#">스냅샷</a></li>
+                                            <li><a href="#">수명 주기 관리자</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="net_sec">
+                                    <div>
+                                        <div id="net_sec_toggle" class="toggle">
+                                            네트워크 및 보안
+                                        </div>
+                                    </div>
+                                    <div id="net_sec_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">보안 그룹</a></li>
+                                            <li><a href="#">탄력적IP</a></li>
+                                            <li><a href="#">배치 그룹</a></li>
+                                            <li><a href="#">키 페어</a></li>
+                                            <li><a href="#">네트워크 인터페이스</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="lb">
+                                    <div>
+                                        <div id="lb_toggle" class="toggle">
+                                            로드 밸런싱
+                                        </div>
+                                    </div>
+                                    <div id="lb_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">로드밸런서</a></li>
+                                            <li><a href="#">대상 그룹</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toggle_li">
+                                <div class="autoscaling">
+                                    <div>
+                                        <div id="autoscaling_toggle" class="toggle">
+                                            Auto Scaling
+                                        </div>
+                                    </div>
+                                    <div id="autoscaling_toggle_contents">
+                                        <ul class="inner">
+                                            <li><a href="#">Auto Scaling 그룹</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>      
+            </div>        
+            <div class="main">
+                <div class="main_contents">
+                    <div class="resource">
+                        <section class="resource_status">
+                            <div class="content_top">
+                                <div class= "content_title">
+                                    <h3>리소스</h3>
+                                </div>
+                                <div class="content_btn">
+                                    <button class="ec2_global">EC2 글로벌 보기</button>
+                                    <button class="setting">설정</button>
+                                    <button class="reload">Reload</button>
+                                </div>
+                            </div>
+                            <div class="content_description">
+                                아시아 태평양 (서울) 리전에서 다음 Amazon EC2 리소스를 사용하고 있음:
+                            </div>
+                            <div class="content">
+                                <ul class="instance_list">
+                                    <li><a href="#">인스턴스(실행 중)</a><span class="num"><a href="#">1</a></span></li>
+                                    <li><a href="#">로드 밸런서</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">배치 그룹</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">보안 그룹</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">볼륨</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">스냅샷</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">인스턴스</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">전용 호스트</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">키 페어</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">탄력적 IP</a><span class="num"><a href="#">0</a></span></li>
+                                    <li><a href="#">Auto Scaling Groups</a><span class="num"><a href="#">0</a></span></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="resource_child">
+                        <div class="child_left">
+                            <section class="instance_start">
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3>인스턴스 시작</h3>
+                                    </div>
+                                </div>
+                                <div class="content_description">
+                                    시작하려면 클라우드의 가상 서버인 Amazon EC2 인스턴스를 시작하십시오.
+                                </div>
+                                <div class="content_description">
+                                    <div class="content_btn" id="instance_btn_div">
+                                        <button class="start_instance">인스턴스 시작</button>
+                                        <button class="server_migration">서버 마이그래이션</button>
+                                    </div>
+                                    <p>참고: 인스턴스는 아시아 태평양 (서울) 리전에서 시작됩니다.</p>
+                                </div>
+                            </section>
+                            <section class="reserved_events">
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3>예약된 이벤트</h3>
+                                    </div>
+                                    <div class="content_btn">
+                                        <button class="reload">Reload</button>
+                                    </div>
+                                </div>
+                                <div class="content_description">
+                                    <h4>아시아 태평양 (서울)</h4>
+                                    <p>예약된 이벤트 없음</p>
+                                </div>
+                            </section>
+                            <section class="server_migration">
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3>서버 마이그레이션</h3>
+                                    </div>
+                                </div>
+                                <div class="content_description">
+                                    <p>AWS Application Migration Service를 사용하여 물리적, 가상 및 클라우드 인프라에서 
+                                        AWS로의 마이그레이션을 간소화하고 신속하게 처리할 수 있습니다.
+                                    </p>
+                                    <p><a href="#">AWS Application Migration Service 시작하기</a></p>
+                                </div>
+                                <div class="content">
+    
+                                </div>
+                            </section>
+                            <section class="id_filter">
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3>빠른 ID 필터</h3>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <input class= "input_resource" type="text" value="리소스 ID 입력">
+                                </div>
+                            </section>
+                        </div>
+                        <div class="child_right">
+                            <section class="service_status">
+                                <div class="content_top">
+                                    <div class= "content_title">
+                                        <h3 class="service_status_h3">서비스 상태</h3>
+                                    </div>
+                                    <div class="content_btn">
+                                        <button class="aws_health">AWS Health 대시보드</button>
+                                        <button class="reload">Reload</button>
+                                    </div>
+                                </div>
+                                <div class="content_description">
+                                    <p class="p_service_region">
+                                        리전<br>
+                                        아시아 태평양(서울)
+                                    </p>
+                                    <p class="p_service_status">
+                                        상태<br>
+                                        <span><img src="image/green_check.png" alt="Check" class="green_check_img"></span>
+                                        <span class="status_message">이 서비스가 정상적으로 작동중입니다.</span>
+                                    </p>
+                                </div>
+                                <div class="content">
+                                    <p class="caption">영역</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>영역 이름</th>
+                                                <th>영역 ID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>ap-northeast-2a</td>
+                                                <td>apne2-az1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ap-northeast-2b</td>
+                                                <td>apne2-az2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ap-northeast-2c</td>
+                                                <td>apne2-az3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ap-northeast-2d</td>
+                                                <td>apne2-az4</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><a href="#" class="region_az">추가 영역 활성화</a></p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <section class="account_property">
+                        <div class="content_top">
+                            <div class= "content_title">
+                                <h3 class="account_property_h3">계정 속성</h3>
+                            </div>
+                            <div class="content_btn">
+                                <button class="reload">Reload</button>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#"><strong>지원되는 플랫폼</strong></a></li>
+                                <li class="need_margin">VPC</li>
+                                <li><a href="#"><strong>기본 VPC</strong></a></li>
+                                <li class="need_margin">vpc-0a65c7163ee8a684e</li>
+                                <li><strong>설정</strong></li>
+                                <li><a href="#" class="account_prop">EBS 암호화</a></li>
+                                <li><a href="#" class="account_prop">영역</a></li>
+                                <li><a href="#" class="account_prop">EC2 직렬 콘솔</a></li>
+                                <li><a href="#" class="account_prop">기본 크레딧 사양</a></li>
+                                <li><a href="#" class="account_prop">콘솔 실험</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="additional_info">
+                        <div class="content_top">
+                            <div class= "content_title">
+                                <h3>추가 정보</h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="#">시작 안내서</a></li>
+                                <li><a href="#">설명서</a></li>
+                                <li><a href="#">모든 EC2 리소스</a></li>
+                                <li><a href="#">포럼</a></li>
+                                <li><a href="#">요금</a></li>
+                                <li><a href="#">문의처</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+        <footer id="footer-content">
+            <div class="inner_contents01">
+                <!--cloudshell icon-->
+                <div id="cloudShell">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="2.0" aria-hidden="true" class="globalNav-0311"
+                            width="16" height="16" viewBox="0 0 16 16">
+                            <path
+                                d="M5 5l2.997 2.998L5 11m4.997-.002H12m3-7.626A2.374 2.374 0 0012.627 1H3.37A2.372 2.372 0 001 3.372v9.256a2.373 2.373 0 002.37 2.373h9.257A2.375 2.375 0 0015 12.628V3.372z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none">
+                            </path>
+                        </svg>
+                    </button>
+                    <button>CloudShell</button>
+                </div>
+    
+                <div id="opinionAndLanguage">
+                    <button>의견</button>
+    
+                    <button>언어</button>
+                </div>
+    
+            </div>
+    
+            <div class="inner_contents02">
+                <button>© 2023, Amazon Web Services, Inc. 또는 계열사.</button>
+                <button>개인 정보 보호</button>
+                <button>약관</button>
+                <button>쿠키 기본 설정</button>
+            </div>
+    
+        </footer>
+    </div>
+</body>
+</html>

@@ -8,30 +8,29 @@
 
     #main_wrap {
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        background-color: lightgray;
+        background-color: #f2f3f3;
         border-collapse: collapse;
     }
 
     #navigation_closed {
         background-color: white;
-        width: 99.7%;
-        height: 45px;        
-        border: 1px solid silver;
+        width: 100%;
+        height: 45px;
+        border-bottom: 1px solid silver;
     }
     
     #navigation_opened {
         background-color: white;
         width: 100%;
-        height: 100vh;
+        height: 100vh;  
         display: none;
-        overflow-y: scroll;
     }
     
     .main {
         width: 100%;
-        height: 90vh;
     }
     
     #nav_open_btn {
@@ -313,14 +312,13 @@
 
     .main {
         width: 100%;
-        height: 88vh;
-        overflow-y: scroll;
     }
 
     #navigation_closed {
         background-color: white;
         width: 45px;
         height: 99.7%;
+        border-right: 1px solid silver;
     }
     
     #navigation_opened {

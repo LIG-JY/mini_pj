@@ -692,4 +692,59 @@
     #cloudShell {
         display: none;
     }
+
+    .sub_box_left {
+        display: none;
+    }
+
+    .sub_box_right {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    #footer-content {
+        align-items: center;
+    }
+
+    .inner_contents02 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inner_contents02 button {
+        align-items: center;
+    }
+
+    .inner_contents02 button:nth-child(1) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inner_contents01 {
+        display: none;
+    }
+
+    #nav_open_btn,
+    #navigation_closed {
+        display: none;
+    }
+
 }

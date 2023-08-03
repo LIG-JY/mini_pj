@@ -703,7 +703,7 @@
         flex-direction: column;
         min-height: 100vh;
         width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     h2,
@@ -717,8 +717,10 @@
         width: 100%;
     }
 
+    /* footer 중앙에 오게 수정 */
+
     footer {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     #footer-content {
@@ -742,6 +744,8 @@
     .inner_contents01 {
         display: none;
     }
+
+    /* footer 중앙에 오게 수정*/
 
     #nav_open_btn,
     #navigation_closed {

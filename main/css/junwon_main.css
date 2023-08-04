@@ -417,4 +417,34 @@
     #opinion{
         padding-left: 10px;
     }
+
+    /* footer 중앙에 오게 수정 */
+
+    footer {
+        margin-top: 15px;
+    }
+
+    #footer-content {
+        align-items: center;
+    }
+
+    .inner_contents02 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inner_contents02 button {
+        align-items: center;
+    }
+
+    .inner_contents02 button:nth-child(1) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inner_contents01 {
+        display: none;
+    }
+
+    /* footer 중앙에 오게 수정*/
 }

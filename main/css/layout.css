@@ -5,7 +5,6 @@
 
     #wrap {
         width: 100%;
-        min-height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -254,6 +253,7 @@
     footer {
         background-color: #232f3e;
         line-height: 25px;
+        width: 100%;
         border-top: 1px solid #545b64;
     }
     
@@ -331,6 +331,21 @@
         padding-left: 0;
     }
 
+    li.toggle_li ul.inner li a {
+        font-size: 0.9rem;
+    }
+
+    div.toggle {
+        font-weight: bold;
+    }
+
+    .current {
+        color: #0073BB;
+    }
+
+    .current:visited {
+        color: #0073BB;
+    }
 }
     
 @media screen and (min-width:768px){

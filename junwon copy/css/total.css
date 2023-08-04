@@ -372,7 +372,7 @@
         display: none;
     }
     ul.head_right li:first-child{
-        display: none;
+        display: inline-block;
     }
     ul.head_right li:nth-of-type(5){
         display: none;
@@ -398,6 +398,9 @@
     /*----------------- Header -----------------*/    
     ul.head_left li:last-child{
         display: inline-block;
+    }
+    ul.head_right li:first-child{
+        display: none;
     }
     /*-------------------------------------------*/
     

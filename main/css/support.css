@@ -552,6 +552,11 @@
         padding-left: 0;
     }
 
+    .inner > li > a:visited,
+    .inner > li > a:hover {
+        color: black;
+    }
+    /* text color 변경 */
 
     /* ++++++++++++++++++++++++++++++++++++++++++ */
     /*------------------footer----------------------*/

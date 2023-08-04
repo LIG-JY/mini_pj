@@ -15,7 +15,7 @@
         <header>
             <ul class="head_left">
                 <li>
-                    <a href="#">
+                    <a href="../main/home.html">
                         <img src="../common/image/aws-logo.png" alt="aws_logo">
                     </a>
                 </li>
@@ -29,11 +29,13 @@
                 </li>
                 <li>
                     <div class="search_section">
-                        <input type="text" name="search" id="search" placeholder="검색">
-                        <span class="material-symbols-outlined" id="search_icon">
-                            search
-                        </span>
-                        <span id="search_hint"> [알트+S]</span>
+                        <form action="../main/support.html">
+                            <input type="text" name="search" id="search" placeholder="검색">
+                            <span class="material-symbols-outlined" id="search_icon">
+                                search
+                            </span>
+                            <span id="search_hint"> [알트+S]</span>
+                        </form>
                     </div>
                 </li>
             </ul>
@@ -351,7 +353,7 @@
                                         </p>
                                         <p>
                                             <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
-                                            <a href="#">vpc-06092cb2822039d40</a>
+                                            <a href="https://ap-northeast-2.console.aws.amazon.com/vpc/home?region=ap-northeast-2#vpcs:vpcId=vpc-06092cb2822039d40">vpc-06092cb2822039d40</a>
                                             <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
                                         </p>
                                     </div>
@@ -361,7 +363,7 @@
                                         </p>
                                         <p>
                                             <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
-                                            <a href="#">subnet-0aa7bbca17c4e1670</a>
+                                            <a href="https://ap-northeast-2.console.aws.amazon.com/vpc/home?region=ap-northeast-2#subnets:subnetId=subnet-0aa7bbca17c4e1670">subnet-0aa7bbca17c4e1670</a>
                                             <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
                                         </p>
                                     </div>
@@ -458,16 +460,58 @@
                                 <div class="card_wrap">
                                     <div>
                                         <p>
-                                            인스턴스 ID
+                                            플랫폼
                                         </p>
                                         <p>
                                             <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
-                                            <span>i-0b2fd43fdd3d0d95a (test)</span>
+                                            <span>Amazon Linux(추론)</span>
                                         </p>
                                     </div>
                                     <div>
                                         <p>
-                                            IPv6 주소
+                                            플랫폼 세부 정보
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            Linux/UNIX
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            중지 방지
+                                        </p>
+                                        <p>
+                                            비활성
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            AMI 시작 인덱스
+                                        </p>
+                                        <p>
+                                            0
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            크레딧 사양
+                                        </p>
+                                        <p>
+                                            standard
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            사용 작업
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            RunInstances
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Enclaves Support
                                         </p>
                                         <p>
                                             -
@@ -475,15 +519,7 @@
                                     </div>
                                     <div>
                                         <p>
-                                            호스트 이름 유형
-                                        </p>
-                                        <p>
-                                            IP 이름: ip-172-31-0-77.ap-northeast-2.compute.internal
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            프라이빗 리소스 DNS 이름 응답
+                                            호스트 리소스 그룹 이름
                                         </p>
                                         <p>
                                             -
@@ -491,7 +527,7 @@
                                     </div>
                                     <div>
                                         <p>
-                                            자동 할당된 IP 주소
+                                            호스트 ID
                                         </p>
                                         <p>
                                             -
@@ -499,18 +535,19 @@
                                     </div>
                                     <div>
                                         <p>
-                                            IAM 역할
+                                            가상화 유형
                                         </p>
                                         <p>
-                                            –
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            hvm
                                         </p>
                                     </div>
                                     <div>
                                         <p>
-                                            IMDSv2
+                                            vCPU 수
                                         </p>
                                         <p>
-                                            Required
+                                            1
                                         </p>
                                     </div>
                                 </div>
@@ -520,7 +557,43 @@
     
                                     <div>
                                         <p>
-                                            퍼블릭 IPv4 주소
+                                            AMI ID
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            ami-0b7c737f668580ff1
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            AMI 이름
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            al2023-ami-2023.1.20230725.0-kernel-6.1-x86_64
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            시작 시간
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            Tue Aug 01 2023 18:15:27 GMT+0900 (한국 표준시) (2 days)
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            시작 시 할당된 키 페어
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            junwon.ppk
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            커널 ID
                                         </p>
                                         <p>
                                             -
@@ -528,55 +601,44 @@
                                     </div>
                                     <div>
                                         <p>
-                                            인스턴스 상태
+                                            RAM 디스크 ID
                                         </p>
                                         <p>
-                                            <span class="material-symbols-outlined">do_not_disturb_on</span> 중지됨
+                                            -
                                         </p>
                                     </div>
                                     <div>
                                         <p>
-                                            프라이빗 IP DNS 이름(IPv4만 해당)
+                                            RBN을 게스트 OS 호스트 이름으로 사용
+                                        </p>
+                                        <p>
+                                            비활성
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            선호도
+                                        </p>
+                                        <p>
+                                            -
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            테넌시
                                         </p>
                                         <p>
                                             <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
-                                             ip-172-31-0-77.ap-northeast-2.compute.internal
+                                            default
                                         </p>
                                     </div>
                                     <div>
                                         <p>
-                                            인스턴스 유형
-                                        </p>
-                                        <p>
-                                            t2.micro
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            VPC ID
+                                            예약
                                         </p>
                                         <p>
                                             <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
-                                            <a href="#">vpc-06092cb2822039d40</a>
-                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            서브넷 ID
-                                        </p>
-                                        <p>
-                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
-                                            <a href="#">subnet-0aa7bbca17c4e1670</a>
-                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            IMDSv2
-                                        </p>
-                                        <p>
-                                            Required
+                                            r-045cfb50a0b5b7b75
                                         </p>
                                     </div>
                                 </div>
@@ -585,16 +647,84 @@
                                 <div class="card_wrap">
                                     <div>
                                         <p>
-                                            프라이빗 IPv4 주소
+                                            모니터링
                                         </p>
                                         <p>
-                                            <a href="#"><span class="material-symbols-outlined copy">content_copy</span></a>
-                                            172.31.0.77
+                                            비활성
                                         </p>
                                     </div>
                                     <div>
                                         <p>
-                                            퍼블릭 IPv4 DNS
+                                            종료 방지
+                                        </p>
+                                        <p>
+                                            비활성
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            AMI 위치
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            amazon/al2023-ami-2023.1.20230725.0-kernel-6.1-x86_64
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            중지-최대 절전 모드 동작
+                                        </p>
+                                        <p>
+                                            비활성
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            상태 전환 이유
+                                        </p>
+                                        <p>
+                                            User initiated (2023-08-01 12:11:54 GMT)
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            상태 전환 메시지
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            Client.UserInitiatedShutdown: User initiated shutdown
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            소유자
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            592371380846
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            현재 인스턴스 부트 모드
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            legacy-bios
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            RBN DNS 호스트 이름 IPv4 응답
+                                        </p>
+                                        <p>
+                                            <a href="#"><span class="material-symbols-outlined optin_move copy">content_copy</span></a>
+                                            비활성
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            배치 그룹
                                         </p>
                                         <p>
                                             -
@@ -602,25 +732,7 @@
                                     </div>
                                     <div>
                                         <p>
-                                            탄력적 IP 주소
-                                        </p>
-                                        <p>
-                                            -
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            AWS Compute Optimizer 찾기
-                                        </p>
-                                        <p>
-                                            <span class="material-symbols-outlined opt_in optin_move">info</span>
-                                            <span class="opt_in">AWS Compute Optimizer에 옵트인</span>                                  
-                                            <a href="#"><span class="material-symbols-outlined optin_move">share_windows</span></a>
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            Auto Scaling 그룹 이름
+                                            배치 그룹 ID
                                         </p>
                                         <p>
                                             -
@@ -654,7 +766,7 @@
                 </div>
     
                 <div id="opinionAndLanguage">
-                    <button> 의견</button>
+                    <button id="opinion"> 의견</button>
     
                     <button>언어</button>
                 </div>

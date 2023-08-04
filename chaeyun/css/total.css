@@ -6,7 +6,7 @@
 
     #wrap {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
@@ -272,13 +272,17 @@
         width: 100%;
         line-height: 25px;
         border-top: 1px solid #545b64;
+        position: fixed;
+        bottom: 0;
     }
 
     footer button {
-        border: 0;
-        margin: 0;
-        padding: 0;
-        margin-left: 5%;
+        padding: 0px 0px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 12px;
+        vertical-align: middle;
     }
 
     #footer-content {
@@ -317,15 +321,6 @@
 
     #opinionAndLanguage > button {
         margin-right: 20px;
-    }
-
-    button {
-        padding: 0px 0px;
-        background-color: transparent;
-        border: none;
-        color: white;
-        font-size: 12px;
-        vertical-align: middle;
     }
 }
 

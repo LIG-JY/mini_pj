@@ -331,6 +331,21 @@
         padding-left: 0;
     }
 
+    li.toggle_li ul.inner li a {
+        font-size: 0.9rem;
+    }
+
+    div.toggle {
+        font-weight: bold;
+    }
+
+    .current {
+        color: #0073BB;
+    }
+
+    .current:visited {
+        color: #0073BB;
+    }
 }
     
 @media screen and (min-width:768px){

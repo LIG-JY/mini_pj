@@ -254,7 +254,10 @@
     footer {
         background-color: #232f3e;
         line-height: 25px;
+        width: 100%;
         border-top: 1px solid #545b64;
+        position: fixed;
+        bottom: 0;
     }
     
     #footer-content {

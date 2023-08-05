@@ -12,6 +12,10 @@
 - AWS Support 페이지 : main/support.html
 - AWS Management Console 페이지 : main/home.html
 
+### docs
+- Pigma : [docs/5조 Figma.pdf](https://github.com/LIG-JY/mini_pj/blob/ff3f8b7a7ad344017cd0cf7bf79a01bbe990dec8/docs/5%EC%A1%B0%20Figma.pdf) 
+- PPT : [docs/mini-project.pdf](https://github.com/LIG-JY/mini_pj/blob/a9f512209d632309058510303bb9c6166481a41d/docs/mini-project.pdf)
+
 ### 고나형
 - 개발한 부분 : Aside, 인스턴스 대시보드 페이지 메인 section 부분, PPT Dashboard 파트
 - HTML : AWS EC2 대시보드 페이지 -> main/dashboard.html
@@ -35,12 +39,8 @@
 - CSS : 
 - JS :
 
-# docs
+<hr>
 
-Pigma : [docs/5조 Figma.pdf](https://github.com/LIG-JY/mini_pj/blob/ff3f8b7a7ad344017cd0cf7bf79a01bbe990dec8/docs/5%EC%A1%B0%20Figma.pdf)
-
-PPT : [docs/mini-project.pdf](https://github.com/LIG-JY/mini_pj/blob/a9f512209d632309058510303bb9c6166481a41d/docs/mini-project.pdf)
-  
 ### commit convention
 <title> 동사 목적어
 

@@ -33,17 +33,21 @@
 - 개발한 부분 : Figma Wireframe, AWS 관리 콘솔 메인 section 부분, PPT Console 파트
 - HTML : AWS Management Console 상세 페이지 -> main/home.html
 - CSS : 
-- JS : 
+- JS :
 
-<hr>
+# docs
 
+Pigma : [docs/5조 Figma.pdf](https://github.com/LIG-JY/mini_pj/blob/ff3f8b7a7ad344017cd0cf7bf79a01bbe990dec8/docs/5%EC%A1%B0%20Figma.pdf)
+
+PPT : [docs/mini-project.pdf](https://github.com/LIG-JY/mini_pj/blob/a9f512209d632309058510303bb9c6166481a41d/docs/mini-project.pdf)
+  
 ### commit convention
 <title> 동사 목적어
 
 ex) "&lt;Support&gt; create css"
 
 
-### 반응형
+### 반응형 규칙
 <img width="696" alt="image" src="https://github.com/LIG-JY/mini_pj/assets/104045973/966d8b7d-affe-48b2-94ad-a8fe3f01da16">
 
 

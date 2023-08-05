@@ -20,7 +20,7 @@
 - 개발한 부분 : Aside, 인스턴스 대시보드 페이지 메인 section 부분, PPT Dashboard 파트
 - HTML : AWS EC2 대시보드 페이지 -> main/dashboard.html
 - CSS : main/css/layout.css & main/css/dashboard.css
-- JS : main/js/junwon.js 메뉴버튼 및 메뉴토글 이벤트 function (line 2 ~ 92)
+- JS : main/js/junwon.js 메뉴버튼 및 메뉴내용 토글 이벤트 function (line 2 ~ 92)
   
 ### 서준원
 - 개발한 부분 : Header, 인스턴스 상세 페이지 메인 section 부분, PPT Instance 파트

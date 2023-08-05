@@ -1,5 +1,5 @@
 # 5조 : 고나형, 서준원, 이재연, 정채윤
-<b>프로젝트 주제 :</b> AWS 웹 페이지 클론 코딩
+### 프로젝트 주제 : AWS 웹 페이지 클론 코딩
 - 고나형 : AWS EC2 대시보드 페이지
 - 서준원 : AWS EC2 인스턴스 상세 페이지
 - 이재연 : AWS Support 페이지
@@ -13,17 +13,27 @@
 - AWS Management Console 페이지 : main/home.html
 
 ### 고나형
-
+- 개발한 부분 : Aside, 인스턴스 대시보드 페이지 메인 section 부분, PPT Dashboard 파트
+- HTML : AWS EC2 대시보드 페이지 -> main/dashboard.html
+- CSS : 
+- JS : 
+  
 ### 서준원
-- 개발한 부분 : Header, 인스턴스 상세 페이지 메인 section 부분, PPT 인스턴스 파트
+- 개발한 부분 : Header, 인스턴스 상세 페이지 메인 section 부분, PPT Instance 파트
 - HTML : AWS EC2 인스턴스 상세 페이지 -> main/ec2.html
 - CSS : main/css/junwon_main.css & main/css/junwon_section.css
 - JS : main/js/junwon.js 헤더 마우스 오버 이벤트 function
 
 ### 이재연
-support.html, support.css, footer, ppt AWS support 부분
-
+- 개발한 부분 : Footer, 고객 지원 페이지 메인 section 부분, PPT Support 파트
+- HTML : AWS EC2 고객 지원 페이지 -> main/support.html
+- CSS : main/css/support.css
+ 
 ### 정채윤
+- 개발한 부분 : Figma Wireframe, AWS 관리 콘솔 메인 section 부분, PPT Console 파트
+- HTML : AWS Management Console 상세 페이지 -> main/home.html
+- CSS : 
+- JS : 
 
 <hr>
 

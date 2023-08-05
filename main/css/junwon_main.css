@@ -289,8 +289,6 @@
         width: 100%;
         line-height: 45px;
         border-top: 1px solid #545b64;
-        position: absolute;
-        top: 95vh;
     }
     
     #footer-content {
@@ -374,7 +372,7 @@
         display: none;
     }
     ul.head_right li:first-child{
-        display: none;
+        display: inline-block;
     }
     ul.head_right li:nth-of-type(5){
         display: none;
@@ -400,6 +398,9 @@
     /*----------------- Header -----------------*/    
     ul.head_left li:last-child{
         display: inline-block;
+    }
+    ul.head_right li:first-child{
+        display: none;
     }
     /*-------------------------------------------*/
     
